@@ -1,90 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Srishti</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main">
-        <nav>
-            <div class="left">Srishti's Portfolio</div>
-            <div class="right">
-                <div>
-                    <i class="ri-home-2-fill"></i>
-                    <a href="index.html">Home</a>
-                </div>
-                <div>
-                    <i class="ri-user-3-fill"></i>
-                    <a href="about.html">About</a>
-                </div>
-                <div>
-                    <i class="ri-git-repository-fill"></i>
-                    <a href="project.html">Project</a>
-                </div>
-                <div>
-                    <i class="ri-mail-fill"></i>
-                    <a href="contact.html">Contact Me</a>
-                </div>
-                <i class="ri-menu-line"></i>
-            </div>
-        </nav>
-        <div class="content">
-            <div class="firstSection">
-                <h3>Hello There! </h3>
-                <h1>I'M <span>SRISHTI BHRIEGU</span></h1>
-                <h2>FullStack Developer</h2>
-                <div class="button-container">
-                    <a href="./Assets/Srishti-Resume.pdf" download class="download-button">Download Resume</a>
-                </div>
-            </div>
-            <div class="secondSection">
-                <img src="./Assets/coding.png" alt="coding img">
-            </div>
+      <nav>
+        <div class="left">SRISHTI BHRIEGU</div>
+        <div class="right">
+          <div>
+            <i class="ri-home-2-fill">
+              <a href="index.html">HOME</a>
+            </i>
+          </div>
+          <div>
+            <i class="ri-user-3-fill">
+              <a href="#" class="about-link" data.target=".about">ABOUT</a>
+            </i>
+          </div>
+          <div>
+            <i class="ri-git-repository-fill">
+              <a href="#" class="project-link" data.target=".project"
+                >PROJECTS</a
+              >
+            </i>
+          </div>
+          <div>
+            <i class="ri-mail-fill">
+              <a href="#" class="contact-link" data.target=".contact"
+                >CONTACT</a
+              >
+            </i>
+          </div>
+          <i class="ri-menu-line"></i>
         </div>
-        <div class="intro">
-            <h2>LET ME <span>INTRODUCE</span> MYSELF</h2>
-            <div class="intro-content">
-                <div class="lef">
-                    <p>Programming isn't just what I do; it's who I am—a lifelong learner on a journey of endless
-                        possibilities.</p>
-                    <p>A dedicated developer proficient in <span>JavaScript and Java</span>.</p>
-                    <p>Experienced in a range of technologies including <span> GitHub, Git, HTML, CSS, SQL, Node.js, and
-                            React.js</span>.</p>
-                    <p>Skilled in<span> MySQL</span> and passionate about problem-solving.</p>
-                    <p>Enthusiastic about programming challenges and frequently engage in coding on platforms like<span>
-                            LeetCode</span>.</p>
-                </div>
-                <div class="rig">
-                    <img src="./Assets/Profile.jpg" alt="profile pic">
-                </div>
-            </div>
+      </nav>
 
+      <div class="front">
+        <h1 class="flowing-text">Front End Developer</h1>
+      </div>
+
+      <div class="content">
+        <div class="firstSection">
+          <h3>Hello There!</h3>
+          <h1>I'M <span>SRISHTI BHRIEGU</span></h1>
+          <h2>FullStack Developer</h2>
+          <div class="button-container">
+            <a
+              href="./Assets/Srishti-Resume.pdf"
+              download
+              class="download-button"
+              >Download Resume</a
+            >
+          </div>
         </div>
-         <div class="connect">
-            <h2>FIND ME ON</h2>
-            <span>Feel free to connect with me</span>
-            <div class="social-account">
-                <a href="https://github.com/srishtibhriegu" class="icon">
-                    <i class="ri-github-fill"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/srishti-bhriegu-641201239" class="icon">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com/srishti.bhriegu?igsh=ZzFvdnhtcnJuMzEw" class="icon">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
+        <div class="secondSection">
+          <img src="./Assets/dev.png" alt="coding img" />
+        </div>
+      </div>
+
+      <div class="intro">
+        <h2>LET ME <span>INTRODUCE</span> MYSELF</h2>
+        <div class="intro-content">
+          <div class="lef">
+            <img src="./Assets/Profile.jpg" alt="profile pic" />
+          </div>
+          <div class="rig">
+            <p>
+              Programming isn't just what I do; it's who I am—a lifelong learner
+              on a journey of endless possibilities.
+            </p>
+            <p>
+              A dedicated developer proficient in
+              <span>JavaScript and Java</span>.
+            </p>
+            <p>
+              Experienced in a range of technologies including
+              <span> GitHub, Git, HTML, CSS, SQL, Node.js, and React.js</span>.
+            </p>
+            <p>
+              Skilled in<span> MySQL</span> and passionate about
+              problem-solving.
+            </p>
+            <p>
+              Enthusiastic about programming challenges and frequently engage in
+              coding on platforms like<span> LeetCode</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <section class="about">
+        <div class="about-content">
+          <div class="first">
+            <h2>Get To Know Me</h2>
+            <p>
+              Hello, I am <span>SRISHTI BHRIEGU</span>currently pursuing
+              <span>B.Tech CSE</span> from RCET, Bhilai. I have gained a solid
+              foundation in software engineering concepts and proramming
+              languages such as <span> Java, JavaScript </span> Also, I am
+              member of <span>Toastmaster International</span> since 2022 which
+              helped me in gaining public speaking and leadership skills.
+            </p>
+          </div>
+          <div class="secondSection">
+            <img src="./Assets/dev.png" alt="" />
+          </div>
+        </div>
+        <div class="skill">
+          <h2>Professional SkillSet</h2>
+          <div class="skill-logo">
+            <div class="logo-box">
+              <i class="fa-brands fa-java"></i>
             </div>
-         </div>
+            <div class="logo-box">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="logo-box">
+              <i class="fa-brands fa-node"></i>
+            </div>
+            <div class="logo-box">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <div class="logo-box">
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
 
-    </div> 
-</body>
+            <div class="logo-box">
+              <i class="fa-brands fa-database"></i>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="project">
+        <div class="project-content">
+          <h2>My Recents Works</h2>
+          <span>Here are some projects I've worked recently.</span>
 
+          <div class="container">
+            <div class="project-box">
+              <h3>Netfilx Clone</h3>
+              <img src="./Assets/netflix1.png" alt="netflix" />
+              <p>
+                I crafted a Netflix replica using HTML and CSS, mirroring the
+                original platform's layout and aesthetics. Employing responsive
+                design strategies, I ensured seamless compatibility across
+                diverse devices and screen resolutions.
+              </p>
+              <div class="button-container">
+                <a
+                  href="https://github.com/srishtibhriegu/Netflix-Clone"
+                  download
+                  class="github"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-box">
+              <h3>Aeroride</h3>
+              <img src="Assets/Aeroride.png" alt="aeroride" />
+              <p>
+                I created an Airline Management System with HTML, CSS, and
+                JavaScript for the frontend, delivering a user-friendly
+                interface. Backend functionalities were developed using the Java
+                Spring Boot framework. The system enables users to effortlessly
+                browse flights, book tickets, and enhances overall user
+                experience and satisfaction.
+              </p>
+              <div class="button-container">
+                <a
+                  href="https://github.com/srishtibhriegu/Airline-Management"
+                  download
+                  class="github"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-box">
+              <h3>Openlayers</h3>
+              <img src="./Assets/map.png" alt="map" />
+              <p>
+                Developed a React app leveraging OpenLayers for interactive
+                mapping functionalities. Enabled users to intuitively place
+                placeholders and draw polygons or lines directly on map
+                Implemented measurement tools for calculating polygon areas and
+                line lengths with ease.
+              </p>
+              <div class="button-container">
+                <a
+                  href="https://github.com/srishtibhriegu/Map-Using-Openlayer"
+                  download
+                  class="github"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-box">
+              <h3>Portfolio</h3>
+              <img src="./Assets/SPortfolio.png" alt="porfolio img" />
+              <p>
+                I've built my portfolio using HTML, CSS, and JavaScript,
+                showcasing my projects and providing contact details for
+                collaboration opportunities. From crafting intuitive user
+                interfaces to implementing robust backend solutions, I bring
+                versatility and expertise to every project. Explore my portfolio
+                and let's connect to bring your ideas to life!
+              </p>
+              <div class="button-container">
+                <a
+                  href="https://github.com/srishtibhriegu/Portfolio"
+                  download
+                  class="github"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <form id="contactForm" onsubmit="sendEmail(); reset(); return false;">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name.."
+              required
+            />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your Email id.."
+              required
+            />
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Your Phone no.."
+              required
+            />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message.."
+              style="height: 150px"
+              required
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+
+      <div class="footer">
+        <div class="footer-content">
+          <div>
+            <span
+              >Copyright <i class="ri-copyright-line"></i> Srishti Bhriegu
+              2024</span
+            >
+          </div>
+
+          <div>
+            <a href="https://github.com/srishtibhriegu" class="icon">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/srishti-bhriegu-641201239"
+              class="icon"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/srishti.bhriegu?igsh=ZzFvdnhtcnJuMzEw"
+              class="icon"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p>srishtibhriegu@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

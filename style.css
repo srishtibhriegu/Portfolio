@@ -5,6 +5,7 @@
 
 html,
 body {
+  background-color: rgb(22, 22, 22);
   height: 100%;
   width: 100%;
 }
@@ -17,7 +18,6 @@ body {
 nav {
   height: 70px;
   width: 100%;
-  border-bottom: 2px solid #dadada;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,30 +27,43 @@ nav {
 .left {
   font-size: 2vw;
   font-weight: 700;
+  color: white;
 }
-
 .right {
   display: flex;
   gap: 5vw;
   align-items: center;
-  margin-right: 6vw;
+  margin-right: 5vw;
 }
 .right a{
   font-size: 1.2vw;
-  color:black;
+  color:white;
   text-decoration: none;
 
 }
-.right a:hover{
-  color: lightseagreen;
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
-  text-decoration-color:  lightseagreen;
-}
+
 .right div {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+nav .right div:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: lightseagreen;
+  transform: translateX(-50%);
+}
+
+nav .right div a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 0 10px;
 }
 
 .right div i {
@@ -72,15 +85,17 @@ nav {
 .firstSection{
   height: 100%;
   width: 50%;
-  padding: 15vw 4vw;
+  padding: 15vw 8vw;
 }
 .firstSection h3{
   font-size: 3vw;
   line-height: 4vw;
+  color: white;
 }
 .firstSection h1{
   font-size: 3vw;
   line-height: 4vw;
+  color: white;
 }
 
 .firstSection h1 span{
@@ -89,6 +104,7 @@ nav {
 .firstSection h2{
   font-size: 3vw;
   line-height: 4vw;
+  color: white;
 }
 .download-button {
   display: inline-block; 
@@ -104,9 +120,26 @@ nav {
   height: 100%;
   width: 50%;
 }
-.secondSection img{
+
+.front{
   height: 100%;
+  width: 50%;
+  position: absolute;
+  left: 0;
   width: 100%;
+}
+.flowing-text {
+  margin:0;
+  padding-top: 26vw;
+  font-size: 10rem;
+  text-align: center;
+  animation: flowText 15s linear infinite;
+  color: rgb(24, 120, 115);
+}
+
+@keyframes flowText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
 .intro {
   text-align: center;
@@ -115,37 +148,40 @@ nav {
   display: flex;
 }
 .intro h2{
-  font-size: 3vw;
+  font-size: 4vw;
   line-height: 4vw;
   padding:2vw 3vw;
+  color: white;
 }
 .intro h2 span{
   color: lightseagreen;
 }
-.lef{
+.rig{
   height: 100%;
   width: 50%;
   padding: 5vw 4vw;
 }
-.lef p{
+.rig p{
+  color: white;
   font-size: 1.6vw;
   line-height: 3.8vw;
   font-weight: bold;
   white-space: nowrap;
   text-align: left;
 }
-.lef p span{
+.rig p span{
   color: lightseagreen;
 }
-.rig{
+.lef{
   height: 100%;
   width: 50%;
+  margin-top: 4vw;
+  margin-right: 8vw;
 }
-.rig img{
+.lef img{
   width: 50%;
   height: 50%;
   border-radius: 50%;
-  margin-left:15vw;
 }
 .connect{
   text-align: center;
@@ -172,6 +208,217 @@ nav {
   padding-top: 5px;
   width:40px;
   height:20px;
+}
+.about-content {
+  text-align: center;
+  height: calc(100% - 70px);
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.about-content .first {
+  height: 100%;
+  width: 50%;
+  padding: 15vw 4vw;
+}
+.about-content .first h2 {
+  color: white;
+  font-size: 2vw;
+  line-height: 4vw;
+}
+.about-content .first p {
+  font-size: 2vw;
+  font-weight: 400;
+  color: white;
+  width: 80%;
+  margin-top: 3vw;
+  margin-left: 5vw;
+}
+.about-content .first p span {
+  color: lightseagreen;
+}
+.about-content .secondSection {
+  height: 100%;
+  width: 50%;
+}
+.secondSection img {
+  padding-top: 7vw;  
+  height: 70%;
+  width: 70%;
+}
+.skill {
+    text-align: center;
+  }
+
+.skill h2{
+    font-size: 3vw;
+    line-height: 4vw;
+    padding:2vw 3vw;
+    color: lightseagreen;
+}
+
+.logo-box {
+    display: inline-block;
+    width: 80px; 
+    height: 60px; 
+    border: 1px solid lightseagreen;
+    margin: 5px;
+    text-align: center;
+    line-height: 60px;
+}
+.logo-box i {
+    color: white;
+    font-size: 2vw;
+    font-weight: 400;
+  }
+
+  .project-content {
+    text-align: center;
+    height: calc(100% - 70px);
+    width: 100%;
+    position: relative;
+    margin-top: 8vw;
+  }
+  .project-content h2 {
+    color: lightseagreen;
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  .project-content span{
+    color: white;
+    font-size: 1vw;
+  }
+  
+  .project-box {
+    display: inline-table;
+    width: 20vw;
+    height: 30vw;
+    border: 2px solid lightseagreen;
+    box-sizing: content-box;
+    margin: 6vw 2vw;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s, box-shadow 0.3s;
+    overflow: hidden;
+  }
+  .project-box:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  .project-box h3{
+    color: white;
+  }
+  .project-box p{
+    color: white;
+    font-size: 1vw;
+    line-height: 1vw;
+  }
+  .project-box img{
+    height: 15vw;
+    width: 17vw;
+  }
+  .github {
+    padding: 1vw 1vw; 
+    background-color: lightseagreen; 
+    text-align: center; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5vw; 
+  }
+
+  .contact {
+    padding: 50px 0;
+}
+
+.contact h2 {
+    color: lightseagreen;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact .container {
+  max-width: 400px;
+  margin: 3vw auto;
+  padding: 20px;
+  background-color:rgb(17, 15, 15);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.contact input[type="text"],
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: rgb(29, 28, 28);
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact input[type="submit"] {
+    background-color: lightseagreen;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.contact input[type="submit"]:focus {
+    outline: none;
+}
+
+.contact input[type="submit"]:active {
+    background-color: #3e8e41;
+}
+
+.footer {
+  color: #fff;
+  padding: 20px 0;
+  text-align: center; 
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content > div {
+  flex: 1;
+}
+
+.footer-content span {
+  font-size: 1.2vw; 
+}
+
+.footer-content .icon {
+  color: #fff; 
+  margin-right: 10px; 
+  font-size: 1.5vw; 
+}
+
+.footer-content .icon:hover {
+  color: lightseagreen;
+}
+
+.footer p {
+  margin-top: 10px; 
+  font-size: 1.2vw; 
 }
 @media (max-width: 600px) {
   nav {
@@ -241,6 +488,14 @@ nav {
     text-decoration: none; 
     border-radius: 5vw; 
 }
+.flowing-text {
+  margin:0;
+  padding-top: 58vw;
+  font-size: 5rem;
+  text-align: center;
+  animation: flowText 10s linear infinite;
+  color: rgb(24, 120, 115);
+}
 
   .intro h2{
     font-size: 10vw;
@@ -251,37 +506,76 @@ nav {
     flex-direction: column;
     text-align: center;
   }
-  .lef{
+  .rig{
     height: 100%;
     width: 50%;
     padding: 20vw 25vw;
     text-align: center;
   }
-  .lef p{
+  .rig p{
     font-size: 5vw; 
     line-height: 7vw;
     white-space: normal; 
     margin-bottom: 15px; 
   }
 
-  .rig{
+  .lef{
     height: 100%;
     width:50%;
     align-self: center;
   }
   
-  .connect{
-    align-items: center;
+  .project-box {
+    display: inline-table;
+    width: 55vw;
+    height: 20vw;
+    border: 2px solid lightseagreen;
+    margin: 6vw 2vw;
+    text-align: center;
+    line-height: 60px;
   }
-
-  .connect h2{
-    font-size: 5vw;
-    line-height: 7vw;
-    padding:1vw 9vw;
-  }
-  .connect span{
+  .project-box p{
     font-size: 4vw;
-    line-height: 2vw;
-    padding:2vw 4vw;
+    line-height: 4vw;
+    margin-bottom: 2vw;
+  }
+  .project-box img{
+    height: 15vw;
+    width: 17vw;
+  }
+  .contact {
+    padding: 50px 0;
+}
+
+.contact .container {
+  margin: 3vw auto;
+  width: 60%;
+  background-color:rgb(17, 15, 15);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+  .footer {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; 
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-content span {
+    font-size: 5vw; 
+  }
+  
+  .footer-content .icon {
+    color: #fff; 
+    margin-right: 10px; 
+    font-size: 4vw; 
+  }
+  
+  .footer p {
+    margin-top: 10px; 
+    font-size: 5vw; 
   }
 }
