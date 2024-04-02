@@ -5,13 +5,11 @@ I've built my portfolio using HTML, CSS, and JavaScript, showcasing my projects 
 From crafting intuitive user interfaces to implementing robust backend solutions, I bring versatility and expertise to every project. Explore my portfolio and let's connect to bring your ideas to life!
 
 ## Screenshots
-![S portfolio](https://github.com/srishtibhriegu/Portfolio/assets/126707268/1694ac08-6345-43ab-9084-2363f95ed0ea)
-![portfolio](https://github.com/srishtibhriegu/Portfolio/assets/126707268/8aeeb05f-af9a-4963-83c7-cd2105ffcab9)
+![portfolio](https://github.com/srishtibhriegu/Portfolio/assets/126707268/7174ff69-2dc0-404f-a80c-cc06f7250250)
+![portfolio2](https://github.com/srishtibhriegu/Portfolio/assets/126707268/dcc863ec-1785-44b6-97ed-073acea65686)
 
 ## Mobile View
-
-![portfolio2](https://github.com/srishtibhriegu/Portfolio/assets/126707268/ff7e2a6f-0340-47b6-a9d6-2b70a3794d83)
-
+![portfolio1](https://github.com/srishtibhriegu/Portfolio/assets/126707268/82c39cc6-3d2e-4d45-8ee2-1d522464335b)
 
 ## Features
 
