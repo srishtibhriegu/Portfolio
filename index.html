@@ -19,36 +19,21 @@
   <body>
     <div class="main">
       <nav>
-        <div class="left">SRISHTI BHRIEGU</div>
-        <div class="right">
-          <div>
-            <i class="ri-home-2-fill">
-              <a href="index.html">HOME</a>
-            </i>
-          </div>
-          <div>
-            <i class="ri-user-3-fill">
-              <a href="#" class="about-link" data.target=".about">ABOUT</a>
-            </i>
-          </div>
-          <div>
-            <i class="ri-git-repository-fill">
-              <a href="#" class="project-link" data.target=".project"
-                >PROJECTS</a
-              >
-            </i>
-          </div>
-          <div>
-            <i class="ri-mail-fill">
-              <a href="#" class="contact-link" data.target=".contact"
-                >CONTACT</a
-              >
-            </i>
-          </div>
-          <i class="ri-menu-line"></i>
-        </div>
-      </nav>
-
+        <ul class="sidebar">
+            <li onclick = hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" style="fill: white;"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#" class="about-link" data.target=".about">ABOUT</a></li>
+            <li><a href="#" class="project-link" data.target=".project">PROJECTS</a></li>
+            <li><a href="#" class="contact-link" data.target=".contact">CONTACT</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Srishti's Portfolio</a></li>
+        <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+        <li class="hideOnMobile"><a href="#" class="about-link" data.target=".about">ABOUT</a></li>
+        <li class="hideOnMobile"><a href="#" class="project-link" data.target=".project">PROJECTS</a></li>
+        <li class="hideOnMobile"><a href="#" class="contact-link" data.target=".contact">CONTACT</a></li>
+        <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" style="fill: white;"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+  </ul>
       <div class="front">
         <h1 class="flowing-text">Front End Developer</h1>
       </div>
@@ -123,23 +108,37 @@
           <h2>Professional SkillSet</h2>
           <div class="skill-logo">
             <div class="logo-box">
-              <i class="fa-brands fa-java"></i>
+              <img src="./Assets/html-icon.png" alt="html logo">
             </div>
             <div class="logo-box">
-              <i class="fa-brands fa-js"></i>
+              <img src="./Assets/css-icon.png" alt="css logo">
             </div>
             <div class="logo-box">
-              <i class="fa-brands fa-node"></i>
+              <img src="./Assets/java-programming-language-icon.png" alt="java logo">
             </div>
             <div class="logo-box">
-              <i class="fa-brands fa-react"></i>
+              <img src="./Assets/javascript-programming-language-icon.png" alt="js logo">
             </div>
             <div class="logo-box">
-              <i class="fa-brands fa-git-alt"></i>
+              <img src="./Assets/node-js-icon.png" alt="nodejs logo">
+            </div>
+            <div class="logo-box">
+              <img src="./Assets/react-js-icon.png" alt="reactjs logo">
+            </div>
+            <div class="logo-box">
+              <img src="./Assets/mysql-icon.png" alt="mysql logo">
             </div>
 
             <div class="logo-box">
-              <i class="fa-brands fa-database"></i>
+              <img src="./Assets/git-icon.png" alt="git logo">
+            </div>
+
+            <div class="logo-box">
+              <img src="./Assets/postman-icon.png" alt="postman logo">
+            </div>
+
+            <div class="logo-box">
+              <img src="./Assets/visual-studio-code-icon.png" alt="visual logo">
             </div>
           </div>
         </div>
@@ -235,36 +234,12 @@
       <section class="contact">
         <div class="container">
           <h2>Contact Me</h2>
-          <form id="contactForm" onsubmit="sendEmail(); reset(); return false;">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name.."
-              required
-            />
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Your Email id.."
-              required
-            />
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              placeholder="Your Phone no.."
-              required
-            />
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Your Message.."
-              style="height: 150px"
-              required
-            ></textarea>
-
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="4b06838c-eeca-4038-a746-a74f27506501">
+            <input type="text" id="name" name="name" placeholder="Your Name.." required />
+            <input type="text" id="email" name="email"  placeholder="Your Email id.." required />
+            <input type="text" id="phone" name="phone" placeholder="Your Phone no.."  required />
+            <textarea id="message" name="message" placeholder="Your Message.." style="height: 150px" required ></textarea>
             <input type="submit" value="Submit" />
           </form>
         </div>
@@ -273,35 +248,21 @@
       <div class="footer">
         <div class="footer-content">
           <div>
-            <span
-              >Copyright <i class="ri-copyright-line"></i> Srishti Bhriegu
-              2024</span
-            >
+            <span>Copyright <i class="ri-copyright-line"></i> Srishti Bhriegu 2024</span>
           </div>
 
-          <div>
-            <a href="https://github.com/srishtibhriegu" class="icon">
-              <i class="ri-github-fill"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/srishti-bhriegu-641201239"
-              class="icon"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/srishti.bhriegu?igsh=ZzFvdnhtcnJuMzEw"
-              class="icon"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
+          <div class="social-icon">
+            <a href="https://github.com/srishtibhriegu" class="icon"> <i class="ri-github-fill"></i> </a>
+            <a href="https://www.linkedin.com/in/srishti-bhriegu-641201239" class="icon" ><i class="fa-brands fa-linkedin"></i> </a>
+            <a href="https://www.instagram.com/srishti.bhriegu?igsh=ZzFvdnhtcnJuMzEw" class="icon" > <i class="fa-brands fa-instagram"></i></a>
           </div>
-        </div>
-
-        <div>
-          <p>srishtibhriegu@gmail.com</p>
-        </div>
+          
+           <div>
+            <p>srishtibhriegu@gmail.com</p>
+           </div>
       </div>
-    </div>
+
+      </div>
+   </div>
   </body>
 </html>
