@@ -16,7 +16,7 @@ https://srishti-portfolio-pearl.vercel.app/
 ## Features
 
 - Responsive design
-- Similar layout to Netflix's homepage
+
 
 ## Technologies Used
 - HTML
