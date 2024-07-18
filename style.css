@@ -321,13 +321,12 @@ nav li:first-child{
     width: 17vw;
   }
   .github {
-    margin: 3vw 6vw; 
+     margin: 3vw 4vw; 
     background-color: lightseagreen; 
     text-align: center; 
     color: #fff; 
     text-decoration: none; 
     border-radius: 5vw; 
-     height: 40px;
   }
 
   .contact {
